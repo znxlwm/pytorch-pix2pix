@@ -6,11 +6,11 @@ Pytorch implementation of pix2pix [1] for various datasets.
 
 ## dataset
 * cityscapes
-  * 2975 training images, 200 train epochs, 1 batch size
+  * 2,975 training images, 200 train epochs, 1 batch size
 * facades
   * 400 training images, 200 train epochs, 1 batch size
 * maps
-  * 1096 training images, 200 train epochs, 1 batch size
+  * 1,096 training images, 200 train epochs, 1 batch size
 * edges2handbags
   * 50k training images, 15 train epochs, 4 batch size
 * edges2shoes
@@ -28,7 +28,7 @@ Pytorch implementation of pix2pix [1] for various datasets.
 ![ani](cityscapes_results/cityscapes_generate_animation.gif)
 
 * Learning Time
-  * cityscapes pix2pix - Avg. per epoch: 332.08 sec; Total 200 epochs: 66846.58 sec
+  * cityscapes pix2pix - Avg. per epoch: 332.08 sec; Total 200 epochs: 66,846.58 sec
   
 ## Development Environment
 
