@@ -24,6 +24,7 @@ Pytorch implementation of pix2pix [1] for various datasets.
 ![city_result](cityscapes_results/cityscapes_200.png)
 
 * Generate animation for fixed inputs
+
 ![ani](cityscapes_results/cityscapes_generate_animation.gif)
 
 * Learning Time
