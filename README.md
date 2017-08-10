@@ -28,7 +28,7 @@ Pytorch implementation of pix2pix [1] for various datasets.
 ![ani](cityscapes_results/cityscapes_generate_animation.gif)
 
 * Learning Time
-  * MNIST DCGAN - Avg. per epoch: 332.08 sec; Total 200 epochs: 66846.58 sec
+  * cityscapes pix2pix - Avg. per epoch: 332.08 sec; Total 200 epochs: 66846.58 sec
   
 ## Development Environment
 
