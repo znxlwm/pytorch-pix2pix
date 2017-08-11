@@ -11,9 +11,9 @@ Pytorch implementation of pix2pix [1] for various datasets.
   * 400 training images, 200 train epochs, 1 batch size
 * maps
   * 1,096 training images, 200 train epochs, 1 batch size
-* edges2handbags
-  * 50k training images, 15 train epochs, 4 batch size
 * edges2shoes
+  * 50k training images, 15 train epochs, 4 batch size
+* edges2handbags
   * 137k training images, 15 train epochs, 4 batch size
 
 ## Resutls
