@@ -39,8 +39,8 @@ transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))
 ])
-train_loader = util.data_load('data/' + opt.dataset, opt.train_subfolder, transform, opt)
-test_loader = util.data_load('data/' + opt.dataset, opt.test_subfolder, transform, opt)
+train_loader = util.data_load('data/' + opt.dataset, opt.train_subfolder, transform, opt.batch_size)
+test_loader = util.data_load('data/' + opt.dataset, opt.test_subfolder, transform, opt.test_batch_size)
 test = test_loader.__iter__().__next__()[0]
 img_size = test.size()[2]
 fixed_y_ = torch.FloatTensor(opt.test_batch_size, test.size()[1], img_size, img_size)
