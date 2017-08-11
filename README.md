@@ -29,6 +29,19 @@ Pytorch implementation of pix2pix [1] for various datasets.
 
 * Learning Time
   * cityscapes pix2pix - Avg. per epoch: 332.08 sec; Total 200 epochs: 66,846.58 sec
+ 
+### facades
+* facades after 200 epochs
+  * First column: input, second column: output, third column: ground truth
+  
+![facades_result](facades_results/facades_200.png)
+
+* Generate animation for fixed inputs
+
+![ani](facades_results/facades_generate_animation.gif)
+
+* Learning Time
+  * facades pix2pix - Avg. per epoch: 44.94 sec; Total 200 epochs: 9,282.64 sec
   
 ## Development Environment
 
