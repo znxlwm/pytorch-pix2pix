@@ -45,10 +45,9 @@ test = test_loader.__iter__().__next__()[0]
 img_size = test.size()[2]
 fixed_y_ = torch.FloatTensor(opt.test_batch_size, test.size()[1], img_size, img_size)
 fixed_x_ = torch.FloatTensor(opt.test_batch_size, test.size()[1], img_size, img_size)
-for i in range(opt.test_batch_size):
-    test = test_loader.__iter__().__next__()[0]
-    fixed_y_[i] = test[:,:,:,0:img_size]
-    fixed_x_[i] = test[:,:,:,img_size:]
+test = test_loader.__iter__().__next__()[0]
+fixed_y_ = test[:, :, :, 0:img_size]
+fixed_x_ = test[:, :, :, img_size:]
 
 # network
 G = network.generator(opt.ngf)
