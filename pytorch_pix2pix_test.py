@@ -9,7 +9,7 @@ parser.add_argument('--dataset', required=False, default='facades',  help='')
 parser.add_argument('--test_subfolder', required=False, default='val',  help='')
 parser.add_argument('--ngf', type=int, default=64)
 parser.add_argument('--save_root', required=False, default='results', help='results save path')
-parser.add_argument('--inverse_order', type=bool, default=True, help='0: [input, target], 1 - [target, input]')
+parser.add_argument('--inverse_order', type=bool, default=True, help='True: [input, target], False: [target, input]')
 opt = parser.parse_args()
 print(opt)
 
