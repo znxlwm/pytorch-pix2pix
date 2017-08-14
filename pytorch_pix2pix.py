@@ -23,14 +23,10 @@ parser.add_argument('--L1_lambda', type=float, default=100, help='lambda for L1 
 parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for Adam optimizer')
 parser.add_argument('--beta2', type=float, default=0.999, help='beta2 for Adam optimizer')
 parser.add_argument('--save_root', required=False, default='results', help='results save path')
-parser.add_argument('--inverse_order', type=bool, default=True, help='0: [input, target], 1 - [target, input]')
+parser.add_argument('--inverse_order', type=bool, default=True, help='True: [input, target], False: [target, input]')
 opt = parser.parse_args()
 print(opt)
 
-opt.dataset = 'edges2handbags'
-opt.batch_size = 4
-opt.train_epoch = 15
-opt.inverse_order = False
 # results save path
 root = opt.dataset + '_' + opt.save_root + '/'
 model = opt.dataset + '_'
