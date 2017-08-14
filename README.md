@@ -6,15 +6,15 @@ Pytorch implementation of pix2pix [1] for various datasets.
 
 ## dataset
 * cityscapes
-  * 2,975 training images, 200 train epochs, 1 batch size
+  * 2,975 training images, 200 train epochs, 1 batch size, inverse order: True
 * facades
-  * 400 training images, 200 train epochs, 1 batch size
+  * 400 training images, 200 train epochs, 1 batch size, inverse order: True
 * maps
-  * 1,096 training images, 200 train epochs, 1 batch size
+  * 1,096 training images, 200 train epochs, 1 batch size, inverse order: True
 * edges2shoes
-  * 50k training images, 15 train epochs, 4 batch size
+  * 50k training images, 15 train epochs, 4 batch size, inverse order: False
 * edges2handbags
-  * 137k training images, 15 train epochs, 4 batch size
+  * 137k training images, 15 train epochs, 4 batch size, inverse order: False
 
 ## Resutls
 ### cityscapes
