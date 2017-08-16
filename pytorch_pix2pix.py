@@ -53,7 +53,7 @@ else:
 
 if img_size != opt.input_size:
     fixed_x_ = util.imgs_resize(fixed_x_, opt.input_size)
-    fixed_y_ = util.imgs_resize(fixed_x_, opt.input_size)
+    fixed_y_ = util.imgs_resize(fixed_y_, opt.input_size)
 
 # network
 G = network.generator(opt.ngf)
@@ -96,6 +96,10 @@ for epoch in range(opt.train_epoch):
         else:
             y_ = x_[:, :, :, img_size:]
             x_ = x_[:, :, :, 0:img_size]
+            
+        if img_size != opt.input_size:
+            x_ = util.imgs_resize(x_, opt.input_size)
+            y_ = util.imgs_resize(y_, opt.input_size)
 
         if opt.resize_scale:
             x_ = util.imgs_resize(x_, opt.resize_scale)
