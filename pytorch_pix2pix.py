@@ -13,6 +13,7 @@ parser.add_argument('--batch_size', type=int, default=1, help='train batch size'
 parser.add_argument('--test_batch_size', type=int, default=5, help='test batch size')
 parser.add_argument('--ngf', type=int, default=64)
 parser.add_argument('--ndf', type=int, default=64)
+parser.add_argument('--input_size', type=int, default=256, help='input size')
 parser.add_argument('--crop_size', type=int, default=256, help='crop size (0 is false)')
 parser.add_argument('--resize_scale', type=int, default=286, help='resize scale (0 is false)')
 parser.add_argument('--fliplr', type=bool, default=True, help='random fliplr True or False')
