@@ -25,7 +25,7 @@ Pytorch implementation of pix2pix [1] for various datasets.
 
 * Generate animation for fixed inputs
 
-![ani](cityscapes_results/cityscapes_generate_animation.gif)
+![cityscapes_gif](cityscapes_results/cityscapes_generate_animation.gif)
 
 * Learning Time
   * cityscapes pix2pix - Avg. per epoch: 332.08 sec; Total 200 epochs: 66,846.58 sec
@@ -38,10 +38,23 @@ Pytorch implementation of pix2pix [1] for various datasets.
 
 * Generate animation for fixed inputs
 
-![ani](facades_results/facades_generate_animation.gif)
+![facades_gif](facades_results/facades_generate_animation.gif)
 
 * Learning Time
   * facades pix2pix - Avg. per epoch: 44.94 sec; Total 200 epochs: 9,282.64 sec
+  
+### edges2handbags
+* edges2handbags after 15 epochs
+  * First column: input, second column: output, third column: ground truth
+  
+![edges2handbags_result](edges2handbags_results/edges2handbags_200.png)
+
+* Generate animation for fixed inputs
+
+![edges2handbags_gif](edges2handbags_results/edges2handbags_generate_animation.gif)
+
+* Learning Time
+  * edges2handbags pix2pix - Avg. per epoch: 10,228.08 sec; Total 15 epochs: 153,443.62 sec
   
 ## Development Environment
 
