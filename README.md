@@ -47,7 +47,7 @@ Pytorch implementation of pix2pix [1] for various datasets.
 * edges2handbags after 15 epochs
   * First column: input, second column: output, third column: ground truth
   
-![edges2handbags_result](edges2handbags_results/edges2handbags_200.png)
+![edges2handbags_result](edges2handbags_results/edges2handbags_15.png)
 
 * Generate animation for fixed inputs
 
