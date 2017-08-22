@@ -63,7 +63,6 @@ Pytorch implementation of pix2pix [1] for various datasets.
 * cuda 8.0
 * Python 2.7.6
 * pytorch 0.1.12
-* torchvision 0.1.8
 * matplotlib 1.3.1
 * imageio 2.2.0
 * scipy 0.19.1
