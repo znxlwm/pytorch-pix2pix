@@ -41,7 +41,7 @@ for x_, _ in test_loader:
 
     if x_.size()[2] != opt.input_size:
         x_ = util.imgs_resize(x_, opt.input_size)
-        y_ = util.imgs_resize(x_, opt.input_size)
+        y_ = util.imgs_resize(y_, opt.input_size)
 
     x_ = Variable(x_.cuda(), volatile=True)
     test_image = G(x_)
