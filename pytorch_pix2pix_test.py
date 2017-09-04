@@ -40,8 +40,8 @@ for x_, _ in test_loader:
         x_ = x_[:, :, :, :x_.size()[2]]
 
     if x_.size()[2] != opt.input_size:
-        fixed_x_ = util.imgs_resize(fixed_x_, opt.input_size)
-        fixed_y_ = util.imgs_resize(fixed_x_, opt.input_size)
+        x_ = util.imgs_resize(x_, opt.input_size)
+        y_ = util.imgs_resize(x_, opt.input_size)
 
     x_ = Variable(x_.cuda(), volatile=True)
     test_image = G(x_)
