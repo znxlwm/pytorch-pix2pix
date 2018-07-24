@@ -64,7 +64,7 @@ def generate_animation(root, model, opt):
         images.append(imageio.imread(img_name))
     imageio.mimsave(root + model + 'generate_animation.gif', images, fps=5)
 
-def data_load(path, subfolder, transform, batch_size):
+def data_load(path, subfolder, transform, batch_size, shuffle=True):
     dset = datasets.ImageFolder(path, transform)
     ind = dset.class_to_idx[subfolder]
 
@@ -76,7 +76,7 @@ def data_load(path, subfolder, transform, batch_size):
 
         n += 1
 
-    return torch.utils.data.DataLoader(dset, batch_size=batch_size, shuffle=True)
+    return torch.utils.data.DataLoader(dset, batch_size=batch_size, shuffle=shuffle)
 
 def imgs_resize(imgs, resize_scale = 286):
     outputs = torch.FloatTensor(imgs.size()[0], imgs.size()[1], resize_scale, resize_scale)
