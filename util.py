@@ -2,7 +2,7 @@ import itertools, imageio, torch
 import matplotlib.pyplot as plt
 import numpy as np
 from torchvision import datasets
-from scipy.misc import imresize
+from PIL import Image       
 
 def show_result(G, x_, y_, num_epoch, show = False, save = False, path = 'result.png'):
     # G.eval()
@@ -81,7 +81,7 @@ def data_load(path, subfolder, transform, batch_size, shuffle=True):
 def imgs_resize(imgs, resize_scale = 286):
     outputs = torch.FloatTensor(imgs.size()[0], imgs.size()[1], resize_scale, resize_scale)
     for i in range(imgs.size()[0]):
-        img = imresize(imgs[i].numpy(), [resize_scale, resize_scale])
+        img = np.array(Image.fromarray(imgs[i].numpy(), mode="RGB").resize((resize_scale, resize_scale)))
         outputs[i] = torch.FloatTensor((img.transpose(2, 0, 1).astype(np.float32).reshape(-1, imgs.size()[1], resize_scale, resize_scale) - 127.5) / 127.5)
 
     return outputs
